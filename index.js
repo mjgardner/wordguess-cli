@@ -5,8 +5,7 @@ var fs = require("fs");
 fs.readFile("./words.json", "utf8", function(error, data) {
   if (error) throw error;
   var wordList = JSON.parse(data);
-  //  var word = new Word(wordList[Math.floor(Math.random() * wordList.length)]);
-  var word = new Word("buzzed");
+  var word = new Word(wordList[Math.floor(Math.random() * wordList.length)]);
   var guesses = [];
   console.log("Let's play Guess The Word!");
   gameLoop(10);
