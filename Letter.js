@@ -5,8 +5,13 @@ function Letter(character) {
     return this.isGuessed ? this.character : "_";
   };
   this.guess = function(guessedCharacter) {
-    this.isGuessed = guessedCharacter.toUpperCase() === this.character;
-  }
+    if (guessedCharacter.toUpperCase() === this.character) {
+      this.isGuessed = true;
+      return true;
+    } else {
+      return false;
+    }
+  };
 }
 
 module.exports = Letter;

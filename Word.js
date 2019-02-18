@@ -12,9 +12,13 @@ function Word(word) {
       .join("");
   };
   this.guessLetter = function(character) {
-    this.letters.forEach(function(element) {
-      element.guess(character);
+    var guessedRight = false;
+    this.letters.forEach(function(letter) {
+      if (letter.guess(character)) {
+        guessedRight = true;
+      }
     });
+    return guessedRight;
   };
 }
 
