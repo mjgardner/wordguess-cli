@@ -1,0 +1,22 @@
+{
+  "name": "wordguess-cli",
+  "version": "1.0.0",
+  "description": "A word guessing game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjgardner/wordguess-cli.git"
+  },
+  "author": "Mark Gardner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjgardner/wordguess-cli/issues"
+  },
+  "homepage": "https://github.com/mjgardner/wordguess-cli#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  }
+}
