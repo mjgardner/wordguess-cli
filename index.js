@@ -42,7 +42,12 @@ fs.readFile("./words.json", "utf8", function(error, data) {
         if (!word.guessLetter(answers.guess.toUpperCase())) {
           console.log("\x1b[31m%s\x1b[0m", "INCORRECT!!!");
           guessesLeft--;
-          console.log(guessesLeft + " guesses remaining!!!");
+          console.log(
+            guessesLeft +
+              " guess" +
+              (guessesLeft === 1 ? "" : "es") +
+              " remaining!!!"
+          );
         } else {
           console.log("\x1b[32m%s\x1b[0m", "CORRECT!!!");
         }
